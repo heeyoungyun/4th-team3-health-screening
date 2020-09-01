@@ -248,13 +248,15 @@ public void paymentApproved(@Payload PaymentApproved paymentApproved){
 
 ## CI/CD 설정
 
-- CodeBuild 기반으로 파이프라인 구성
+- CodeBuild 기반으로 CI/CD 파이프라인 구성
+MSA 서비스별 CodeBuild 프로젝트 생성하여  CI/CD 파이프라인 구성
 
-<img src="https://user-images.githubusercontent.com/62231786/85087121-927ed900-b217-11ea-8f57-bbd4efc25997.JPG"/>
+<img src="https://user-images.githubusercontent.com/67447253/91837032-92bf3a00-ec86-11ea-96e6-263a590cd849.JPG"/>
 
-- Git Hook 연경
+- Git Hook 연결
+연결한 Github의 소스 변경 발생 시 자동으로 빌드 및 배포 되도록 Git Hook 연결 설정
 
-<img src="https://user-images.githubusercontent.com/62231786/85087123-93b00600-b217-11ea-90b3-4de01d03583a.JPG" />
+<img src="https://user-images.githubusercontent.com/67447253/91837300-0103fc80-ec87-11ea-9698-fc1afb52893c.JPG" />
 
 
 ## 동기식 호출 / 서킷 브레이킹 / 장애격리
